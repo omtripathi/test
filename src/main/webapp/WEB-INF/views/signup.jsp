@@ -4,25 +4,25 @@
 
     <title>Sign Up - Bootsnipp.com</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-    <link media="all" type="text/css" rel="stylesheet" href="https://bootsnipp.com/css/fullscreen.css">
+    <!-- <script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script src="//code.jquery.com/jquery-1.10.2.min.js"></script> -->
+    <link media="all" type="text/css" rel="stylesheet"  href="resources/style.css" > <!-- href="https://bootsnipp.com/css/fullscreen.css" -->
 
 </head>
 <body style="">
-    <iframe id="snippet-preview" src="//s.bootsnipp.com/iframe/4ldn" frameborder="no">
+    <!-- <iframe id="snippet-preview" src="//s.bootsnipp.com/iframe/4ldn" frameborder="no"> -->
 <html lang="en"><head>
     <meta charset="utf-8">
     <meta name="robots" content="noindex, nofollow">
 
     <title>Sign Up - Bootsnipp.com</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <style type="text/css">
+   <!--  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
+  <!--   <style type="text/css">
     body { padding-top:30px; }
 .form-control { margin-bottom: 10px; }
-    </style>
-    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    </style> -->
+  <!--   <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script> -->
     <script type="text/javascript">
         window.alert = function(){};
         var defaultCSS = document.getElementById('bootstrap-css');
@@ -38,10 +38,14 @@
 </head>
 <body style="">
 	<div class="container">
-    <div class="row">
+	<div class="info">
+    <h1>Sign Up Form</h1><span>Made with <i class="fa fa-heart"></i> by <a href="http://andytran.me">Andy Tran</a></span>
+  </div>
+    <div class="form">
+    <form class="login-form">
         <div class="col-xs-12 col-sm-12 col-md-4 well well-sm">
-            <legend><a href="http://www.jquery2dotnet.com"><i class="glyphicon glyphicon-globe"></i></a> Sign up!</legend>
-            <form action="#" method="post" class="form" role="form">
+            <!-- <legend><a href="http://www.jquery2dotnet.com"><i class="glyphicon glyphicon-globe"></i></a> Sign up!</legend> -->
+            <form action="/add" method="post" class="login-form" role="form">
             <div class="row">
                 <div class="col-xs-6 col-md-6">
                     <input class="form-control" name="firstname" placeholder="First Name" type="text" required="" autofocus="">
@@ -55,37 +59,37 @@
             <input class="form-control" name="password" placeholder="New Password" type="password">
             <label for="">
                 Birth Date</label>
-            <div class="row">
-                <div class="col-xs-4 col-md-4">
+            <!-- <div class="row">
+                <div class="col-xs-4 col-md-4"> -->
                     <select class="form-control">
                         <option value="Month">Month</option>
                     </select>
-                </div>
-                <div class="col-xs-4 col-md-4">
+                <!-- </div> -->
+                <!-- <div class="col-xs-4 col-md-4"> -->
                     <select class="form-control">
                         <option value="Day">Day</option>
                     </select>
-                </div>
-                <div class="col-xs-4 col-md-4">
+                <!-- </div> -->
+                <!-- <div class="col-xs-4 col-md-4"> -->
                     <select class="form-control">
                         <option value="Year">Year</option>
                     </select>
-                </div>
-            </div>
-            <label class="radio-inline">
-                <input type="radio" name="sex" id="inlineCheckbox1" value="male">
+                <!-- </div> -->
+            <!-- </div> -->
+           <!--  <label class="radio-inline"> -->
+                <input class="form-control" type="radio" name="sex" id="inlineCheckbox1" value="male">
                 Male
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="sex" id="inlineCheckbox2" value="female">
+            <!-- </label> -->
+           <!--  <label class="radio-inline"> -->
+                <input class="form-control" type="radio" name="sex" id="inlineCheckbox2" value="female">
                 Female
-            </label>
-            <br>
-            <br>
+           <!--  </label> -->
+           
             <button class="btn btn-lg btn-primary btn-block" type="submit">
                 Sign up</button>
             </form>
         </div>
+    </form>
     </div>
 </div>
 	<script type="text/javascript">
@@ -94,7 +98,7 @@
 
 
 </body></html>
-</iframe>
+<!-- </iframe> -->
     <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-34731274-1']);

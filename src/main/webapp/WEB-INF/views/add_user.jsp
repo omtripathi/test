@@ -2,7 +2,7 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Bootstrap 3 Contact form with Validation</title>
+  <title>Add User</title>
   <script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
 
 
@@ -23,7 +23,7 @@
 <fieldset>
 
 <!-- Form Name -->
-<legend>Contact Us Today!</legend>
+<!-- <legend>Contact Us Today!</legend> -->
 
 <!-- Text input-->
 

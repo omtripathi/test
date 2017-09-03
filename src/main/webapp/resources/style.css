@@ -13,7 +13,8 @@
   text-align: center;
 }
 .form .thumbnail {
-  background: #EF3B3A;
+  /* background: #EF3B3A; */
+  background: #bfd9f2;
   width: 150px;
   height: 150px;
   margin: 0 auto 30px;
@@ -42,9 +43,24 @@
   box-sizing: border-box;
   font-size: 14px;
 }
+.form select {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
 .form button {
   outline: 0;
-  background: #EF3B3A;
+ /* background: #EF3B3A; */
+ background: #bfd9f2;
   width: 100%;
   border: 0;
   padding: 15px;
@@ -53,6 +69,7 @@
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   color: #FFFFFF;
+  /* color: #bfd9f2; */
   font-size: 14px;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
@@ -64,7 +81,8 @@
   font-size: 12px;
 }
 .form .message a {
-  color: #EF3B3A;
+ /*  color: #EF3B3A; */
+  color: #bfd9f2;
   text-decoration: none;
 }
 .form .register-form {

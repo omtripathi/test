@@ -12,14 +12,24 @@ import org.springframework.web.servlet.ModelAndView;
 public class HomeController {
 
 	@RequestMapping(value="/")
-	public ModelAndView test(HttpServletResponse response) throws IOException{
+	public ModelAndView home(HttpServletResponse response) throws IOException{
 		//return new ModelAndView("login");
 		return new ModelAndView("index");
 	}
 	
-	@RequestMapping(value="/login")
+	@RequestMapping(value="/signup")
 	public ModelAndView login(HttpServletResponse response) throws IOException{
 		//return new ModelAndView("login");
+		return new ModelAndView("signup");
+	}
+	@RequestMapping(value="/add")
+	public ModelAndView add(HttpServletResponse response) throws IOException{
+		//return new ModelAndView("login");
 		return new ModelAndView("add_user");
+	}
+	
+	@RequestMapping(value="/login")
+	public ModelAndView test(HttpServletResponse response) throws IOException{
+		return new ModelAndView("login");
 	}
 }
