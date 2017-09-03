@@ -260,15 +260,19 @@
 				</li>
 			</ul>
 		</div>
+		<div class="copyrights wrapper">
+			Copyright © 2015 <a href="http://pixelhint.com" target="_blank" class="ph_link" title="Download more free Templates">Pixelhint.com</a>. All Rights Reserved.
+		</div>
+	</footer>	
 <div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
 <div class="form">
-  <div class="thumbnail"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/hat.svg"/></div>
+  <div class="thumbnail"><img src="resources/img/house.png"/></div>
   <form class="register-form">
     <input type="text" placeholder="name"/>
     <input type="password" placeholder="password"/>
     <input type="text" placeholder="email address"/>
     <button>create</button>
-    <p class="message">Already registered? <a href="#">Sign In</a></p>
+    <p class="message">Already registered? <a href="#modal">Sign In</a></p>
   </form>
   <form class="login-form" >
     <input type="text" placeholder="username"/>
@@ -290,9 +294,9 @@
   <button data-remodal-action="confirm" class="remodal-confirm">OK</button> -->
 </div>
 
-<div class="remodal" data-remodal-id="modal2" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+<div class=".remodal.remodal-is-opening" data-remodal-id="modal2" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
 <div class="form">
-  <div class="thumbnail"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/hat.svg"/></div>
+  <div class="thumbnail"><img src="resources/img/house.png"/></div>
   <form class="register-form">
     <input type="text" placeholder="name"/>
     <input type="password" placeholder="password"/>
@@ -310,10 +314,7 @@
    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
 
 </div>
-		<div class="copyrights wrapper">
-			Copyright © 2015 <a href="http://pixelhint.com" target="_blank" class="ph_link" title="Download more free Templates">Pixelhint.com</a>. All Rights Reserved.
-		</div>
-	</footer><!--  end footer  -->
+	<!--  end footer  -->
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="..resources/jquery.min.js"><\/script>')</script>
