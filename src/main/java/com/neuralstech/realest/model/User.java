@@ -2,19 +2,25 @@ package com.neuralstech.realest.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
 public class User {
 	
 	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
 	
-	@Column(name="FIRST_NAME")
-	private String firstName;
+	@Column(name="FULL_NAME")
+	private String fullName;
 	
-	@Column(name="LAST_NAME")
-	private String lastName;
+	@Column(name="USER_NAME")
+	private String userName;
+	
+	@Column(name="PASSWORD")
+	private String password;
 	
 	@Column(name="EMAIL_ID")
 	private String emailId;
@@ -28,17 +34,24 @@ public class User {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public String getFirstName() {
-		return firstName;
+	public String getFullName() {
+		return fullName;
 	}
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
 	}
-	public String getLastName() {
-		return lastName;
+	public String getUserName() {
+		return userName;
 	}
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
 	}
 	public String getEmail() {
 		return emailId;
@@ -57,10 +70,10 @@ public class User {
 		StringBuilder builder = new StringBuilder();
 		builder.append("User [id=");
 		builder.append(id);
-		builder.append(", firstName=");
-		builder.append(firstName);
-		builder.append(", lastName=");
-		builder.append(lastName);
+		builder.append(", fullName=");
+		builder.append(fullName);
+		builder.append(", userName=");
+		builder.append(userName);
 		builder.append(", emailId=");
 		builder.append(emailId);
 		builder.append(", mobileNo=");

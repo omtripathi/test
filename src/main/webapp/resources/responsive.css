@@ -213,6 +213,16 @@ header nav .login_btn:hover{
     -moz-background-size: cover;
     -o-background-size: cover;
 }
+.hero_add_property{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    /* background: url('img/hero.jpg') no-repeat bottom center; */
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
 
 .hero .caption{
     width: 100%;

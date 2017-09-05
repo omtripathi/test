@@ -34,16 +34,22 @@ public class HomeController {
 		//return new ModelAndView("login");
 		return new ModelAndView("add_user");
 	}
+	@RequestMapping(value="/addProperty")
+	public ModelAndView addProperty(HttpServletResponse response) throws IOException{
+		//return new ModelAndView("login");
+		return new ModelAndView("add_property");
+	}
 	
 	@RequestMapping(value="/login")
 	public ModelAndView test(HttpServletResponse response) throws IOException{
 		User user = new User();
-		user.setId(1L);
-		user.setFirstName("om");
-		user.setLastName("tripathi");
+		//user.setId(2L);
+		user.setFullName("om");
+		user.setUserName("om");
 		user.setEmail("tripathiom");
-		user.setMobileNo(8989898989l);
-		//genericService.add(user);
-		return new ModelAndView("login");
+		user.setPassword("test");
+		user.setMobileNo(8989898980l);
+		genericService.add(user);
+		return new ModelAndView("business_user");
 	}
 }

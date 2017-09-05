@@ -267,17 +267,23 @@
 <div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
 <div class="form">
   <div class="thumbnail"><img src="resources/img/house.png"/></div>
-  <form class="register-form">
-    <input type="text" placeholder="name"/>
-    <input type="password" placeholder="password"/>
-    <input type="text" placeholder="email address"/>
+  <form class="register-form" method="post" action="login">
+    <input type="text" placeholder="Full Name"/>
+    <input type="text" placeholder="UserName"/>
+    <input type="password" placeholder="Password"/>
+    <input type="password" placeholder="Confirm Password"/>
+    <input type="text" placeholder="Email Address"/>
+    <input type="text" placeholder="Mobile No"/>
+    <input type="radio" name="user_type">Individual User
+    <input type="radio" name="user_type">Agent/Builder
+    
     <button>create</button>
     <p class="message">Already registered? <a href="#modal">Sign In</a></p>
   </form>
-  <form class="login-form" >
+  <form class="login-form" method="post" action="login">
     <input type="text" placeholder="username"/>
     <input type="password" placeholder="password"/>
-    <button >login</button>
+    <button type="submit"  >login</button>
     <p class="message">Not registered? <a href="#modal2">Create an account</a></p>
   </form>
 </div>
